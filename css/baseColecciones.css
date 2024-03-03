@@ -1,17 +1,19 @@
 /* Sebastián Sondor */
-@media (min-width: 300px){
+@media (max-width: 749px){
     body{
         background-color: #eeeeee;
     }
+    
     .fondo{
         display: flex;
         min-height: 120px;
         margin: 0px;
-        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
     .fondo p{
         margin: 20px 0px;
-        font-size: 65px;
+        font-size: 45px;
     }
     .fondo p span{
         font-weight: bold;
@@ -20,8 +22,6 @@
         margin-top: 30px;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        text-align: center;
         align-items: center;
     }
     .obras .contenedor{
@@ -32,10 +32,12 @@
         border-radius: 5px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); 
     }
-    .obras .contenedor img{
+    .obras .contenedor .imagen{
+        border: none;
+    }
+    .obras .contenedor .imagen img{
         margin: 0px;
         width: 100%;
-        height: 80%;
     }
     .obras .contenedor .dato{
         border: 0px;
@@ -46,30 +48,73 @@
         margin: 0px;
         width: 100%;
         h2{
-            font-size: 50px;
+            font-size: 40px;
             margin: 0px;
             margin-top: 15px;
             margin-left: 10px;
         }
         h3{
-            font-size: 40px;
+            font-size: 30px;
             margin-top: 10px;
             margin-left: 10px;
         }
         p{
-            font-size: 30px;
+            font-size: 20px;
             margin-top: 15px;
-            margin-left: 10px;
+            margin-left: 15px;
         }
     }
     
 }
-@media (min-width: 768px){
-    body{
-        background-color: #8a65c4;
+@media (min-width: 750px){
+    .fondo{
+        display: flex;
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+    .fondo p{
+        margin: 20px 0px;
+        font-size: 55px;
+    }
+    .fondo p span{
+        font-weight: bold;
+    }
+    .obras{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: start;
+        justify-content: space-around;
+    }
+    .obras .contenedor{
+        width: 40%; 
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    .obras .contenedor .imagen img{
+        width: 100%;
+    }
+    
+    .obras .contenedor .dato{
+        h2{
+            font-size: 45px;
+            margin: 0px;
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+        h3{
+            font-size: 35px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        p{
+            font-size: 25px;
+            margin-top: 15px;
+            margin-left: 15px;
+        }
     }
 }
-@media (min-width: 1024px){
+@media (min-width: 1200px){
     body{
         background-color: #eeeeee;
     }
@@ -77,11 +122,16 @@
         min-height: 150px;
         margin: 0px;
         text-align: left;
+        justify-content: left;
     }
     .fondo p{
         font-size: 50px;
         margin-top: 20px;
         margin-left: 80px;
+    }
+    
+    .fondo p span{
+        font-weight: bold;
     }
     .obras{
         margin: 0px 80px;
@@ -90,6 +140,8 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: start;
+        flex-wrap: wrap;
+        align-items: start;
     }
     .obras .contenedor{
         margin: 0px;
@@ -97,6 +149,8 @@
         flex-direction: column;
         width: 30%;
         box-shadow: none;
+        margin-bottom: 30px;
+        border-radius: 5px;
     }
     .obras .contenedor:hover{
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); 
@@ -107,19 +161,20 @@
         height: 80%;
     }
     .obras .contenedor .dato{
+        text-align: left;
         h2{
-            font-size: 30px;
+            font-size: 45px;
             margin: 0px;
             margin-top: 10px;
             margin-left: 10px;
         }
         h3{
-            font-size: 20px;
+            font-size: 30px;
             margin-top: 5px;
             margin-left: 10px;
         }
         p{
-            font-size: 18px;
+            font-size: 25px;
             margin-top: 10px;
             margin-left: 10px;
         }

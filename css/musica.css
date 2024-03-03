@@ -14,7 +14,7 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-@media (min-width: 1024px){    
+@media (min-width: 1200px){    
     .obras .contenedor{
         border: none;
         background-color: #eeeeee;

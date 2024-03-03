@@ -15,6 +15,15 @@
     background-color: rgba(0, 0, 0, 0.555);
     min-height:calc(90vh - 60px);
 }
+.direccion{
+    display: flex;
+    flex-direction: row;
+    margin-top:15px;
+    background-color: #eeeeeed2;
+    border-radius: 10px;
+    color:black;
+    padding: 5px;
+}
 @media (max-width: 749px){
     .visita .informacion{
         display: flex;
@@ -28,6 +37,20 @@
     }
     .visita h1{
         font-size: 40px;
+    }
+    .direccion{
+        width: 80%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .direccion h2{
+        text-align: left;
+        margin: 0px;
+        font-size: 20px;
+    }
+    .direccion .ubicacion{
+        margin: 0px;
+        text-align: right;
     }
 }
 @media (min-width:750px){
@@ -45,6 +68,12 @@
     .visita h1{
         font-size: 40px;
     }
+    .direccion{
+        margin-top: 40px;
+        width: 50%;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
 @media (min-width: 1200px){
     .visita .informacion{
@@ -60,5 +89,12 @@
     }
     .visita h1{
         font-size: 40px;
+    }
+    
+    .direccion{
+        margin-top: 60px;
+        width: 30%;
+        justify-content: space-around;
+        align-items: center;
     }
 }

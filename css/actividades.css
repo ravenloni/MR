@@ -1,0 +1,78 @@
+/* Sebastián Sondor */
+
+section{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+article{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0px;
+}
+.guia{
+    display: flex;
+    background-image: url("../imagenes/interiorMuseo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+}
+.guia .fecha{
+    width: 20%;
+}
+.guia .nombre{
+    display: flex;
+    text-align: right;
+    justify-content: end;
+    align-items: end;
+    width: 80%;
+    height: 100%;
+}
+.guia .nombre h3{
+    margin-right: 10px;
+}
+.guia .fecha{
+    background-color: rgb(51, 41, 41);
+    display: inline-flex;
+    padding: 5px;
+}
+@media (max-width: 749px){
+    .guia{
+        flex-direction: row;
+        width: 80%;
+        height: 100%;
+    }
+}
+@media (min-width:750px){
+    .guia{
+        width: 100%;
+    }
+}
+@media (min-width: 1200px){
+    .guia .fecha{
+        width: 20%;
+    }
+    .fecha h3{
+        margin-left: 80px;
+        font-size: 40px;
+    }
+    .guia .nombre{
+        display: flex;
+        text-align: right;
+        justify-content: end;
+        align-items: end;
+        width: 80%;
+        height: 100%;
+    }
+    .nombre h3{
+        font-size: 30px;
+    }
+    .guia{
+        background-image: url("../imagenes/interiorMuseopc.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

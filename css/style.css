@@ -1,0 +1,320 @@
+/* Sebastián Sondor */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+@media (min-width: 300px){
+    body{
+        background-color: #eeeeee;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0px;
+        
+    }
+    .logo{
+        width: 507px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: 1px solid red;
+    }
+    .logo .museo{
+        display: flex;
+        justify-content: space-between;
+    }
+    header .logo h1{
+        margin: 0px;
+        padding: 0px;
+        font-size: 60px;
+    }
+    header .logo p{
+        margin-top: 5px;
+        font-size: 40px;
+    }
+    img{
+        width: 200px;
+    }
+
+    /*prueba*/
+    section{
+        text-align: center;
+    }
+    section article{
+        display: flex;
+        height: 18vh;
+    }
+    article .info{
+        width: 40%;
+    }
+    article .info h1{
+        font-size: 40px;
+        margin: 0px;
+        padding: 0px;
+    }
+    article .imagen{
+        width: 60%;
+    }
+    article .imagen img{
+        width: 100%;
+        height: 100%;
+    }
+    .detalles{
+        border:1px solid #000000;
+        width: 70%;
+        margin-top: 20px;
+    }
+    .arte {
+        .info{
+            background-color: #ff585d;
+        }
+        
+        .detalles{
+            margin-left: 10px;
+        }
+        img{
+            visibility:hidden;
+        }
+    }
+    .musica{
+        .info{
+            background-color: #f3b860;
+        }
+        .detalles{
+            margin-left: 10px;
+        }
+    }
+    .literatura{
+        .info{
+            background-color:  #8a65c4;
+        }
+        .detalles{
+            float: right;
+            margin-right: 10px;
+        }
+    }
+}
+@media (min-width: 768px){
+    body{
+        background-color: #8a65c4;
+    }
+}
+@media (min-width: 1024px){
+    body{
+        background-color: #eeeeee;
+    }
+    header{
+        border: 1px solid #eeeeee;
+        padding: 0px;
+        justify-content: left;
+    }
+    .logo{
+        margin-left: 80px;
+        width: 212px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo .museo{
+        display: flex;
+        justify-content: space-between;
+    }
+    header .logo h1{
+        margin: 0px;    
+        padding: 0px;
+        font-size: 25px;
+    }
+    header .logo p{
+        margin-top: 5px;
+        font-size: 17px;
+    }
+    nav{
+        background-color: #eeeeee;
+        position: sticky;
+        top:0px;
+    }
+    nav ul {
+        display:inline-flex;
+        margin: 0;
+        margin-left: 80px;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+    }
+    nav ul li a {
+        font-size: 20px;
+        display: block;
+        padding: 20px 0px;
+        margin:0px;
+        margin-right: 60px;
+        color: black;
+        text-decoration: none;
+        font-weight: bold; /* Añade negrita a las letras */
+        position: relative;
+    }
+    
+    nav ul li a:hover{
+        color:#a1a1a1;
+    }
+    
+    .animacion::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: #000000;
+        transition: width 0.3s ease;
+    }
+      
+    .animacion:hover::after {
+        width: 100%; 
+    }
+    
+    nav ul li.dropdown:hover .dropdown-content {
+        display: block;
+    }
+      
+    .dropdown-content {
+        background-color: #eeeeee;
+        display: none;
+        margin: 0px;
+        position: absolute;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+        column-count: 1;
+        column-gap: 20px;
+        width: auto;
+    }
+      
+    .dropdown-content li {    
+        display: block;
+        margin-top: 10px;
+        clear: both;
+    }
+      
+    .dropdown-content li a {
+        display: block;
+        padding: 5px;
+        color:black;
+        text-decoration: none;
+    }
+      
+    .dropdown-content li a:hover {
+        color:#a1a1a1;
+    }
+    section{
+        text-align: center;
+    }
+    section article{
+        display: flex;
+        height: 50vh;
+    }
+    article .info{
+        width: 35%;
+    }
+    article .info h1{
+        font-size: 40px;
+        margin: 0px;
+        padding: 0px;
+    }
+    article .imagen{
+        width: 65%;
+    }
+    article .imagen img{
+        width: 100%;
+        height: 100%;
+    }
+    .detalles{
+        border:1px solid #000000;
+        width: 70%;
+        margin-top: 20px;
+    }
+    .arte {
+        .info{
+            background-color: #ff585d;
+        }
+        
+        .detalles{
+            margin-left: 80px;
+        }
+        
+        img{
+            visibility:visible;
+        }
+    }
+    /* .arquitectura{
+        .info{
+            background-color: #8a65c4;
+        }
+        .detalles{
+            margin-left: 80px;
+        }
+        .imagen{
+            background-image: url('../imagenes/palacioSans.jpg');
+            background-size: cover;
+        }
+    } */
+    .musica{
+        .info{
+            background-color: #f3b860;
+        }
+        .detalles{
+            margin-left: 80px;
+        }
+    }
+    .literatura{
+        .info{
+            background-color:  #8a65c4;
+        }
+        .detalles{
+            float: right;
+            margin-right: 80px;
+        }
+    }
+    .fondoVisita{
+        background-image: url("../imagenes/museo.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height:calc(90vh - 62px);
+    }
+    .visita{
+        display: flex;
+        flex-direction: column;     
+        align-items: center;
+        color:white;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.555);
+        min-height:calc(90vh - 60px);
+    }
+    .visita .informacion{
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+    }
+    .visita .informacion div{
+        width: 49%;
+    }
+    .visita h1{
+        font-size: 40px;
+    }
+    
+}
+/*
+rojo: #ff585d
+morado: #8a65c4
+blanco: #eeeeee
+*/

@@ -1,0 +1,30 @@
+/* Sebastián Sondor */
+
+.fondo{
+    border: 1px solid #f3b860;
+    background-color: #f3b860;
+}
+.obras .contenedor {
+    border: 3px solid  #ffcc80;
+    background-color: #ffcc80;
+}
+.dato{
+    border: 0px;
+    border-radius: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+@media (min-width: 1024px){    
+    .obras .contenedor{
+        border: none;
+        background-color: #eeeeee;
+    }
+    .obras div:hover{
+        background-color:  #ffcc80;
+    }
+}
+/*
+*  Amarillo base #f5e06a
+*  #f0e088
+    #70b8c9
+*/

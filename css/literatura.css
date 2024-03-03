@@ -1,0 +1,25 @@
+/* Sebastián Sondor */
+
+.fondo{
+    border: 1px solid  #8a65c4;
+    background-color:  #8a65c4;
+}
+.obras .contenedor {
+    border: 3px solid  #917fad;
+    background-color: #917fad;
+}
+.dato{
+    border: 0px;
+    border-radius: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+@media (min-width: 1024px){    
+    .obras .contenedor{
+        border: none;
+        background-color: #eeeeee;
+    }
+    .obras div:hover{
+        background-color:  #917fad;
+    }
+}
